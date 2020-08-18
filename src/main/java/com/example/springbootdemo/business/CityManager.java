@@ -1,7 +1,7 @@
-package com.example.springbootdemo.Business;
+package com.example.springbootdemo.business;
 
-import com.example.springbootdemo.DataAccess.ICityDal;
-import com.example.springbootdemo.Entities.City;
+import com.example.springbootdemo.dataAccess.ICityDal;
+import com.example.springbootdemo.entities.City;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

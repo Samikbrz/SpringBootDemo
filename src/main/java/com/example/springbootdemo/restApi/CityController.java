@@ -1,7 +1,7 @@
 package com.example.springbootdemo.restApi;
 
-import com.example.springbootdemo.Business.ICityService;
-import com.example.springbootdemo.Entities.City;
+import com.example.springbootdemo.business.ICityService;
+import com.example.springbootdemo.entities.City;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

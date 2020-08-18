@@ -1,9 +1,8 @@
-package com.example.springbootdemo.DataAccess;
+package com.example.springbootdemo.dataAccess;
 
-import com.example.springbootdemo.Entities.City;
+import com.example.springbootdemo.entities.City;
 import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
