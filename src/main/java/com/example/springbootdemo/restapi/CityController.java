@@ -1,4 +1,4 @@
-package com.example.springbootdemo.restApi;
+package com.example.springbootdemo.restapi;
 
 import com.example.springbootdemo.business.ICityService;
 import com.example.springbootdemo.entities.City;
@@ -13,7 +13,7 @@ import java.util.List;
 @RequestMapping("/api")
 public class CityController {
 
-    private ICityService cityService;
+    private final ICityService cityService;
 
     @Autowired
     public CityController(ICityService cityService) {

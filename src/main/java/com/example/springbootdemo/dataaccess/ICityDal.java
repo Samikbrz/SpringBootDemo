@@ -1,4 +1,4 @@
-package com.example.springbootdemo.dataAccess;
+package com.example.springbootdemo.dataaccess;
 
 import com.example.springbootdemo.entities.City;
 import java.util.List;
