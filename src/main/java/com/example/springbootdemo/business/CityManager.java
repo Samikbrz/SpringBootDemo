@@ -20,7 +20,7 @@ public class CityManager implements ICityService{
 
     @Override
     @Transactional
-    public List<City> GetAll() {
-        return cityDal.GetAll();
+    public List<City> getAll() {
+        return cityDal.getAll();
     }
 }

@@ -4,5 +4,5 @@ import com.example.springbootdemo.entities.City;
 import java.util.List;
 
 public interface ICityDal {
-    List<City> GetAll();
+    List<City> getAll();
 }

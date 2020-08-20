@@ -24,7 +24,7 @@ public class HibernateCityDal implements ICityDal{
 
     @Override
     @Transactional
-    public List<City> GetAll() {
+    public List<City> getAll() {
         Session session=entityManager.unwrap(Session.class);
         List<City> cities=session.createQuery("from City",City.class).getResultList();
         return  cities;

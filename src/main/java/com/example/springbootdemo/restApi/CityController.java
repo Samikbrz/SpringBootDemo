@@ -22,7 +22,7 @@ public class CityController {
 
     @GetMapping("/cities")
     public List<City> get(){
-        return  cityService.GetAll();
+        return  cityService.getAll();
     }
 
 }
