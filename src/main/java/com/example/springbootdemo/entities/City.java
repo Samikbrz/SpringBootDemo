@@ -13,9 +13,7 @@ public class City {
     @Column(name = "cityname")
     private String cityName;
 
-    public City(){
-
-    }
+    public City(){}
 
     public City(int cityId, String cityName) {
         this.cityId = cityId;
