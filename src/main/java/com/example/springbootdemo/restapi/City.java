@@ -1,14 +1,14 @@
-package com.example.springbootdemo.entities;
+package com.example.springbootdemo.restapi;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name="city")
+//@Table(name="city")
 public class City {
     @Id
     @Column(name = "cityid")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int cityId;
+    private long cityId;
 
     @Column(name = "cityname")
     private String cityName;
@@ -20,7 +20,7 @@ public class City {
         this.cityName = cityName;
     }
 
-    public int getCityId() {
+    public long getCityId() {
         return cityId;
     }
 

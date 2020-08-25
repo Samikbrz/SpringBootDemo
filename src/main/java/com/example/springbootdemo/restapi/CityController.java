@@ -1,7 +1,5 @@
 package com.example.springbootdemo.restapi;
 
-import com.example.springbootdemo.business.ICityService;
-import com.example.springbootdemo.entities.City;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,16 +11,16 @@ import java.util.List;
 @RequestMapping("/api")
 public class CityController {
 
-    private final ICityService cityService;
+    private final CityRepository cityRepository;
 
     @Autowired
-    public CityController(ICityService cityService) {
-        this.cityService = cityService;
+    public CityController(CityRepository cityRepository) {
+        this.cityRepository = cityRepository;
     }
 
     @GetMapping("/cities")
     public List<City> get(){
-        return  cityService.getAll();
+        return  cityRepository.findAll();
     }
 
 }
