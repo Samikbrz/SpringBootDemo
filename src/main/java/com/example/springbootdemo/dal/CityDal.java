@@ -3,6 +3,7 @@ package com.example.springbootdemo.dal;
 import com.example.springbootdemo.model.City;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 public interface CityDal {
@@ -15,4 +16,10 @@ public interface CityDal {
     }
 
     List<City> getAllCity();
+
+    Optional<City> selectCityById(UUID id);
+
+    int deleteCityById(UUID id);
+
+    int updateCityById(UUID id,City city);
 }

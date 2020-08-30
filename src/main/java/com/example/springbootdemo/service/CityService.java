@@ -6,7 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+import java.rmi.server.UID;
 import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
 
 @Service
 public class CityService {
@@ -24,5 +27,17 @@ public class CityService {
 
     public List<City> getAllCity(){
         return  cityDal.getAllCity();
+    }
+
+    public Optional<City> getPersonById(UUID id){
+        return cityDal.selectCityById(id);
+    }
+
+    public int deleteCity(UUID id){
+        return cityDal.deleteCityById(id);
+    }
+
+    public int updateCity(UUID id,City city){
+        return cityDal.updateCityById(id,city);
     }
 }
