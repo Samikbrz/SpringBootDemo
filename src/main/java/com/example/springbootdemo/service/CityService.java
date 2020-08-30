@@ -17,7 +17,7 @@ public class CityService {
     private final CityDal cityDal;
 
     @Autowired
-    public CityService(@Qualifier("cityDal") CityDal cityDal) {
+    public CityService(@Qualifier("postgres") CityDal cityDal) {
         this.cityDal = cityDal;
     }
 

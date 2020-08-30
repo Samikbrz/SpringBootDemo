@@ -1,0 +1,4 @@
+CREATE TABLE city(
+    id UUID  NOT NULL PRIMARY KEY,
+    cityname VARCHAR(100) NOT NULL
+);
