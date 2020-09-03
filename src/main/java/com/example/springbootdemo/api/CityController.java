@@ -32,7 +32,7 @@ public class CityController {
     }
 
     @GetMapping(path = "{id}")
-    public City getPersonById(@PathVariable("id") UUID id){
+    public City getCityById(@PathVariable("id") UUID id){
         return cityService.getPersonById(id).orElse(null);
     }
 
